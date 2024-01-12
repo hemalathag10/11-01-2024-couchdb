@@ -1,15 +1,13 @@
+// app.component.ts
+
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
-  template: `
-    <div>
-      <h1>Welcome to the Angular CouchDB Blog</h1>
-      <app-add-post></app-add-post>
-      <app-post-list></app-post-list>
-    </div>
-  `,
+  templateUrl:'./app.component.html',
   styles: []
 })
 export class AppComponent {
+  title = 'Angular CouchDB Auth Demo';
 }
