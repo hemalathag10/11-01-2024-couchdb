@@ -1,0 +1,16 @@
+<!-- src/app/post-list/post-list.component.html -->
+
+<h2>Blog Posts</h2>
+
+<ul>
+  <li *ngFor="let post of posts">
+    {{ post.title }} - {{ post.content }}
+  </li>
+</ul>
+<!-- Add this section to your PostListComponent template -->
+
+<h2>Filter Posts by Date</h2>
+
+<input type="date" [(ngModel)]="selectedDate">
+<button (click)="filterPostsByDate(selectedDate)">Filter</button>
+

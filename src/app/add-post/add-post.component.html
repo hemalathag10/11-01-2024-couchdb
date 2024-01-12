@@ -1,0 +1,13 @@
+<!-- src/app/add-post/add-post.component.html -->
+
+<h2>Add a New Post</h2>
+
+<form (ngSubmit)="addPost()">
+  <label for="title">Title:</label>
+  <input id="title" name="title" [(ngModel)]="newPost.title" required>
+
+  <label for="content">Content:</label>
+  <textarea id="content" name="content" [(ngModel)]="newPost.content" required></textarea>
+
+  <button type="submit">Add Post</button>
+</form>
